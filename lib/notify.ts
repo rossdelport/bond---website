@@ -27,14 +27,12 @@ export async function notifyNewSignup(email: string): Promise<void> {
       body: JSON.stringify({
         from: NOTIFY_FROM,
         to: [NOTIFY_TO],
-        subject: "🎉 New Bond waitlist signup",
+        subject: "new sign up for Bond!",
         html:
-          `<div style="font-family:system-ui,sans-serif;font-size:15px;color:#2a2218">` +
-          `<p>Someone just joined the Bond waitlist:</p>` +
-          `<p style="font-size:18px"><strong>${safe}</strong></p>` +
-          `<p style="color:#8a7a6a">Blobby is one step closer. 🥚</p>` +
+          `<div style="font-family:system-ui,sans-serif;font-size:16px;color:#2a2218">` +
+          `new sign up for Bond from <strong>${safe}</strong>!` +
           `</div>`,
-        text: `New Bond waitlist signup: ${email}`,
+        text: `new sign up for Bond from ${email}!`,
       }),
       cache: "no-store",
     });
