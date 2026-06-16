@@ -497,7 +497,7 @@ svg {
 
 /* --- Journey preview ------------------------------------------------------ */
 .journey-section {
-  background: var(--cream-deep);
+  background: #ffffff;
   padding: 5rem 1.5rem;
 }
 .journey-section__window {
@@ -560,7 +560,7 @@ svg {
 
 /* --- Notifications preview ------------------------------------------------ */
 .notifs-section {
-  background: var(--cream);
+  background: #ffffff;
   padding: 5rem 1.5rem;
 }
 .notifs-section__phone {
@@ -674,7 +674,7 @@ svg {
 
 /* --- Registration --------------------------------------------------------- */
 .register {
-  background: var(--register-bg);
+  background: #ffffff;
   padding: 6rem 1.5rem;
   text-align: center;
 }
