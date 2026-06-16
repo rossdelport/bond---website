@@ -173,3 +173,60 @@ export function grassFlower(petal: string, center: string, stem: string): Sprite
     grid: ["p.p", "pcp", "psp", ".s.", ".s."],
   };
 }
+
+/* ----------------------------------------------------------------------------
+ * Journey milestone icons.
+ * ------------------------------------------------------------------------- */
+export function cross(color: string): Sprite {
+  return {
+    palette: { c: color },
+    grid: [
+      "..ccc..",
+      "..ccc..",
+      "ccccccc",
+      "ccccccc",
+      "ccccccc",
+      "..ccc..",
+      "..ccc..",
+    ],
+  };
+}
+
+export function crescent(color: string): Sprite {
+  return {
+    palette: { k: color },
+    grid: [
+      "...kkk...",
+      "..kkkkk..",
+      ".kkk..k..",
+      ".kk......",
+      ".kk......",
+      ".kk......",
+      ".kkk..k..",
+      "..kkkkk..",
+      "...kkk...",
+    ],
+  };
+}
+
+export const flame: Sprite = {
+  palette: { o: "#e8732a", y: "#f6b73a", w: "#fff0c0" },
+  grid: [
+    "...o...",
+    "..ooo..",
+    "..ooo..",
+    ".ooyoo.",
+    ".oyyyo.",
+    "ooyyyoo",
+    "ooywyoo",
+    ".oyyyo.",
+    "..ooo..",
+  ],
+};
+
+export function check(color: string): Sprite {
+  return {
+    palette: { c: color },
+    grid: ["......c", ".....cc", "c...cc.", "cc.cc..", ".ccc...", "..c...."],
+  };
+}
