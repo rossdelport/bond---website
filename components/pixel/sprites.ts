@@ -137,6 +137,28 @@ export function decorHeart(color: string): Sprite {
   };
 }
 
+/* A larger, shaded heart for the emotional-hook section.  13 x 11. */
+export const bigHeart: Sprite = {
+  palette: {
+    H: "#e0607a", // body
+    L: "#f4a4b6", // highlight
+    D: "#c2466a", // shadow
+  },
+  grid: [
+    "..LHH...HHH..",
+    ".LLHHH.HHHHH.",
+    "LLHHHHHHHHHHH",
+    "HHHHHHHHHHHHH",
+    "HHHHHHHHHHHHH",
+    ".HHHHHHHHHHD.",
+    "..HHHHHHHHD..",
+    "...HHHHHHD...",
+    "....HHHHD....",
+    ".....HHD.....",
+    "......D......",
+  ],
+};
+
 export function decorFlower(petal: string, center: string): Sprite {
   return {
     palette: { p: petal, c: center },

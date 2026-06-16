@@ -410,13 +410,73 @@ svg {
 
 /* --- Emotional hook ------------------------------------------------------- */
 .hook {
-  background: var(--peach);
+  background: #ffffff;
   padding: 6rem 1.5rem;
 }
 .hook__inner {
   max-width: 760px;
   margin: 0 auto;
   text-align: center;
+}
+
+/* two hearts joined by a line, with a pink orb drifting between them */
+.bond-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 0 auto 2.8rem;
+  max-width: 460px;
+}
+.bond-link__heart {
+  flex-shrink: 0;
+  line-height: 0;
+  filter: drop-shadow(0 6px 8px rgba(224, 96, 122, 0.22));
+}
+.bond-link__heart svg {
+  width: clamp(56px, 15vw, 88px);
+  height: auto;
+}
+.bond-link__track {
+  position: relative;
+  flex: 1;
+  max-width: 220px;
+  height: 22px;
+  margin: 0 14px;
+  display: flex;
+  align-items: center;
+}
+.bond-link__line {
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    #e9b9c6 0 6px,
+    transparent 6px 12px
+  );
+}
+.bond-link__orb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffb0cd 0%, #ec6aa6 58%, #d4488a 100%);
+  box-shadow: 0 0 12px rgba(236, 106, 166, 0.65);
+  transform: translate(-50%, -50%);
+  animation: orb-travel 4.8s ease-in-out infinite;
+}
+@keyframes orb-travel {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 .hook__quote {
   font-family: var(--font-head);
@@ -865,8 +925,12 @@ svg {
   .blobby-float,
   .blobby-bounce,
   .blobby-excited__spark,
-  .journey__glow {
+  .journey__glow,
+  .bond-link__orb {
     animation: none;
+  }
+  .bond-link__orb {
+    left: 50%;
   }
   .btn:hover,
   .card:hover {
