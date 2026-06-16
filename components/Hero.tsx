@@ -1,6 +1,7 @@
 import { BlobbyIdle } from "./pixel/Blobby";
 import { Habitat } from "./pixel/Habitat";
 import { Decor } from "./pixel/Decor";
+import { WaitlistForm } from "./WaitlistForm";
 
 export function Hero() {
   return (
@@ -20,10 +21,11 @@ export function Hero() {
         </div>
 
         <div className="hero__cta">
-          <a className="btn btn--primary btn--lg" href="#register">
-            get early access
-          </a>
-          <p className="hero__finepoint">no spam. just Blobby news.</p>
+          <WaitlistForm
+            variant="hero"
+            submitLabel="get early access"
+            fineprint="no spam. just Blobby news."
+          />
         </div>
       </div>
     </section>
