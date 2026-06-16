@@ -5,7 +5,6 @@ import { EmotionalHook } from "@/components/EmotionalHook";
 import { JourneyPreview } from "@/components/JourneyPreview";
 import { NotificationsPreview } from "@/components/NotificationsPreview";
 import { Registration } from "@/components/Registration";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <NotificationsPreview />
         <Registration />
       </main>
-      <Footer />
     </>
   );
 }

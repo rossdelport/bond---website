@@ -37,7 +37,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--cream);
+  background: #ffffff;
   color: var(--ink);
   font-family: var(--font-body);
   font-weight: 400;
@@ -128,10 +128,10 @@ svg {
   height: var(--nav-h);
   display: flex;
   align-items: center;
-  background: rgba(245, 240, 230, 0.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(216, 208, 192, 0.55);
+  border-bottom: 1px solid rgba(216, 208, 192, 0.4);
 }
 .nav__inner {
   width: 100%;
@@ -158,7 +158,7 @@ svg {
   display: flex;
   align-items: center;
   padding: 2.5rem 1.5rem 3.5rem;
-  background: var(--cream);
+  background: #ffffff;
 }
 .hero__inner {
   position: relative;
@@ -364,7 +364,7 @@ svg {
 
 /* --- Pillars -------------------------------------------------------------- */
 .pillars {
-  background: var(--cream);
+  background: #ffffff;
   padding: 5rem 1.5rem;
 }
 .pillars__grid {
@@ -773,39 +773,6 @@ svg {
 .waitlist--hero .waitlist__fine {
   margin-top: 0.7rem;
   font-size: 0.78rem;
-}
-
-/* --- Footer --------------------------------------------------------------- */
-.footer {
-  background: var(--cream);
-  padding: 3.5rem 1.5rem;
-  text-align: center;
-  border-top: 1px solid var(--border);
-}
-.footer__name {
-  font-family: var(--font-head);
-  font-weight: 500;
-  color: var(--ink);
-  font-size: 1.02rem;
-}
-.footer__made {
-  margin-top: 0.45rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.footer__links {
-  margin-top: 0.9rem;
-  color: var(--muted);
-  font-size: 0.8rem;
-  opacity: 0.85;
-}
-.footer__links a {
-  color: var(--muted);
-  text-decoration: none;
-}
-.footer__links a:hover {
-  color: var(--teal);
-  text-decoration: underline;
 }
 
 /* --- Legal page ----------------------------------------------------------- */
