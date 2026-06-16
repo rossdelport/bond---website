@@ -4,6 +4,7 @@ import {
   SUPABASE_PUBLISHABLE_KEY,
   WAITLIST_TABLE,
 } from "@/lib/config";
+import { notifyNewSignup } from "@/lib/notify";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -41,6 +42,8 @@ export async function POST(request: Request) {
     });
 
     if (res.ok) {
+      // New signup — let the owner know (best-effort, never blocks the response).
+      await notifyNewSignup(email.toLowerCase());
       return NextResponse.json({ ok: true });
     }
 
